@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="Content/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/common.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/style.css">
+</head>
+<body ng-app="app">
+<header class="header">
+    <h1>购物车</h1>
+</header>
+<section class="section">
+    <ui-view></ui-view>
+</section>
+<footer class="footer">
+    <dl>
+        <dt>
+            <i class="fa fa-home"></i>
+        </dt>
+        <dd>客服</dd>
+    </dl>
+    <dl>
+        <dt>
+            <i class="fa fa-ship"></i>
+        </dt>
+        <dd>店铺</dd>
+    </dl>
+    <dl>
+        <dt>
+            <i class="fa fa-newspaper-o"></i>
+        </dt>
+        <dd>消息</dd>
+    </dl>
+    <dl>
+        <dt>
+            <i class="fa fa-facebook-official"></i>
+        </dt>
+        <dd>微淘</dd>
+    </dl>
+    <dl>
+        <dt>
+            <i class="fa fa-meetup"></i>
+        </dt>
+        <dd>我的</dd>
+    </dl>
+
+</footer>
+<script type="text/javascript" src="Script/js/angular.min.js"></script>
+<script type="text/javascript" src="Script/js/angular-ui-router.js"></script>
+<script type="text/javascript" src="Script/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="App/app.js"></script>
+<script type="text/javascript" src="App/Controller/shopController.js"></script>
+<script type="text/javascript" src="App/Controller/shopItemController.js"></script>
+
+<script type="text/javascript" src="App/service/shopServer.js"></script>
+<script type="text/javascript" src="App/Directive/shop.js"></script>
+
+</body>
+</html>

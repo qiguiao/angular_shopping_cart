@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "小熊养生壶全自动加厚",
+    "image": "Content/images/img_03.png",
+    "addr": "北京",
+    "state": true,
+    "num": 1,
+    "price": 90,
+    "size": "M",
+    "color": "red"
+  },
+  {
+    "id": 2,
+    "name": "因特尔主板",
+    "image": "Content/images/img_05.jpeg",
+    "addr": "北京",
+    "state": true,
+    "num": 1,
+    "price": 199,
+    "size": "L",
+    "color": "green"
+  },
+  {
+    "id": 3,
+    "name": "大熊猫绿色电饭锅",
+    "image": "Content/images/img_04.jpeg",
+    "addr": "北京",
+    "state": false,
+    "num": 1,
+    "price": 299,
+    "size": "s",
+    "color": "blue"
+  }
+]

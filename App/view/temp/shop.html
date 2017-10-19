@@ -1,0 +1,38 @@
+
+<div class="cont">
+    <dl ng-repeat="item in products">
+        <p class="mr5 check-one">
+            <!--<input type="checkbox">-->
+            <span id="itemChecked"
+                  class="chose"
+                  ng-class="{on:item.state}"
+                  ng-click="itemChecked(index)"></span>
+        </p>
+        <dt>
+            <img ng-src="{{item.image}}" alt="">
+        </dt>
+        <dd>
+            <h4>{{item.name}}</h4>
+            <p class="mt10">
+                <span class="reduce" ng-click="itemCount('-')">-</span>
+                <span class="count">{{item.num}}</span>
+                <span class="add" ng-click="itemCount('+')">+</span>
+            </p>
+            <p class="mt10">￥: <b class="price">{{item.price}}</b></p>
+        </dd>
+        <div class="remove" class="del" ng-click="deleteItem(index)">
+            <span>×</span>
+        </div>
+    </dl>
+
+</div>
+<div class="footer_money">
+    <p>
+        <!--<input type="checkbox" name="1"><label>全选</label>-->
+        <span class="all" ng-class="{allon:flag}" ng-click="checkAll()"></span><span>全选</span>
+    </p>
+    <p>
+        <a href="#">合计:<u>￥{{goodsPrice}}</u>不含运费</a>
+        <button class="buy">结算(<span>{{goodsCount}}</span>)</button>
+    </p>
+</div>
